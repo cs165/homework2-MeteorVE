@@ -6,13 +6,24 @@ body {
 
 .choice-grid {
     display: flex;
+    justify-content: space-around;
     flex-wrap: wrap;
 }
 
-.choice-grid>div {
+
+.choice-grid .answer {
+    background-color: #cfe3ff;
+    opacity: 1;
+}
+
+.opacity-mask {
+    opacity: 0.6;
+}
+
+.choice-grid div {
     /* margin-top: 10px; */
     margin-bottom: 20px;
-    margin-right: 8.75px;
+    margin-right: 1.25%;
 
     width: 32.5%;
     background-color: #f4f4f4;
@@ -25,7 +36,6 @@ body {
 
 .choice-grid>div:nth-child(3n) {
     margin-right: 0px;
-
 }
 
 .choice-grid img:first-child {
@@ -34,4 +44,60 @@ body {
 }
 
 
-#checkbox {}
+
+#test_result {
+    /* margin: 20px 10px; */
+    
+    padding: 40px 20px;
+    box-sizing: border-box;
+    border: solid #dcdcdc 1px;
+}
+
+#test_result p {
+    margin: 18px auto;
+
+}
+
+#test_result div {
+    height: 50px;
+    line-height: 50px;
+    background-color: #cecece;
+    text-align: center;
+}
+
+#test_result div:hover {
+    background-color: #e0e0e0;
+}
+
+@media (max-width: 700px) {
+    article {
+        width: 95%;
+    }
+
+    header div {
+        display: none;
+    }
+}
+
+@media (max-width: 500px) {
+
+    .choice-grid>div {
+        width: 48%;
+    }
+
+    /* 
+    .choice-grid>div {
+        margin-right: 4%;
+    } */
+
+    /* .choice-grid>div:nth-child(3n) {
+        margin-right: 4%;
+    } */
+
+
+    .choice-grid>div:nth-child(2n) {
+        margin-right: 0px;
+
+    }
+
+}
