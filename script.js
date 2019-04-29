@@ -39,7 +39,7 @@ function add_onclick_listen(){
             answer[i].classList.remove("answer");
             answer[i].childNodes[3].src = "images/unchecked.png";
         }
-
+        document.getElementById("top_header").scrollIntoView();
     };
 }
 
